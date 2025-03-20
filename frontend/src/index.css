@@ -1,0 +1,159 @@
+/* 🌟 General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* 📜 Sidebar Styling */
+.sidebar {
+  width: 280px;
+  height: 100vh;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  overflow-y: auto;
+}
+
+.sidebar h5 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar ul li:hover {
+  background-color: #e9ecef;
+}
+
+/* 📝 Chat Container */
+.chat-container {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-height: 400px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 🗨️ Chat Messages */
+.chat-message {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  max-width: 80%;
+  padding: 12px;
+  border-radius: 10px;
+  word-wrap: break-word;
+}
+
+/* 🧑 User Messages */
+.chat-message.user {
+  align-self: flex-end;
+  background-color: #007bff;
+  color: white;
+  border-bottom-right-radius: 2px;
+}
+
+/* 🤖 Bot Messages */
+.chat-message.bot {
+  align-self: flex-start;
+  background-color: #f1f1f1;
+  color: black;
+  border-bottom-left-radius: 2px;
+}
+
+/* 🏷️ Table Styling */
+.table-container {
+  overflow-x: auto;
+}
+
+.table {
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: white;
+}
+
+.table th {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+}
+
+.table td {
+  text-align: center;
+}
+
+/* 💬 Input Box */
+.input-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: sticky;
+  bottom: 10px;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.input-container button {
+  background-color: #007bff;
+  color: white;
+  border-radius: 6px;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.input-container button:hover {
+  background-color: #0056b3;
+}
+
+/* 📥 Download Buttons */
+.download-buttons {
+  margin-top: 10px;
+}
+
+.download-buttons button {
+  margin-right: 10px;
+}
+
+/* 🖥️ Responsive Design */
+@media (max-width: 768px) {
+  .sidebar {
+      width: 100%;
+      height: auto;
+      border-right: none;
+      border-bottom: 1px solid #ddd;
+  }
+
+  .table-container {
+      overflow-x: auto;
+  }
+
+  .chat-container {
+      max-height: 300px;
+  }
+}
